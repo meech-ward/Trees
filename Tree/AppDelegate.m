@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <Realm/Realm.h>
+
 @interface AppDelegate ()
 
 @end
@@ -18,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSLog(@"Trunk.stump");
+    [RLMRealm defaultRealm];
     return YES;
 }
 
